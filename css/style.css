@@ -1,0 +1,223 @@
+.container {
+  width: min(100%, 1440px);
+  margin: auto;
+  padding: 32px 20px;
+  background-color: #1c5550;
+  display: grid;
+  grid-template-rows: 48px 146px 146px 284px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 40px;
+  grid-template-areas:
+    "header header header header"
+    "section1 section2 section2 section3"
+    "section1 section2 section2 section4"
+    "article1 article2 article3 article4";
+}
+/* header  */
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  column-gap: 84px;
+}
+.active {
+  text-decoration: underline #91b599;
+  text-underline-offset: 5px;
+  font-weight: 700;
+}
+header nav ul li a {
+  color: #dfd9d9;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+.header_right_content {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+.search_content {
+  display: flex;
+  padding: 8px 20px 7px 20px;
+  box-shadow: 1px 2px 2px -1px #00000033 inset;
+  background: rgba(0, 0, 0, 0.2);
+  column-gap: 100px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.search_content p {
+  color: #91b599;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.fa-magnifying-glass {
+  font-size: 16px;
+  color: #91b599;
+}
+header button {
+  padding: 4px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 2px -1px #00000033 inset;
+  border: none;
+}
+.fa-user-large {
+  color: #91b599;
+  font-size: 24px;
+}
+.fa-cart-shopping {
+  color: #c3b97f;
+  font-size: 24px;
+}
+/* section1  */
+.section1 {
+  grid-area: section1;
+  border-radius: 4px;
+  background: #3d3d3d33;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.2) inset,
+    0px -0.3px 1px 0px rgba(163, 160, 160, 0.4) inset;
+}
+.section1 h3 {
+  color: #c3b97f;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 38px 115px 16px 40px;
+}
+
+.section1 nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-left: 48px;
+}
+.section1 nav a {
+  color: #91b599;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+/* section2  */
+.section2 {
+  grid-area: section2;
+  background-image: url(../images/Rectangle\ 1.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+.section2 div {
+  background: #dfd9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.price {
+  color: #1c5550;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.section2 button {
+  padding-inline: 50px 51px;
+}
+.add_button {
+  padding-block: 9px;
+  background: #c3b97f;
+  color: #dfd9d9;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+}
+/* section3  */
+.section3 {
+  grid-area: section3;
+  background-image: url(../images/Rectangle\ 9.png);
+  background-color: rgb(200, 200, 200);
+  background-position: center;
+  background-size: cover;
+}
+/* section4  */
+.section4 {
+  grid-area: section4;
+  background-image: url(../images/Rectangle\ 10.png);
+  background-color: rgb(200, 200, 200);
+  background-position: center;
+  background-size: cover;
+}
+/* article1  */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.article1 {
+  grid-area: article1;
+}
+.article_img_cont {
+  background-image: url(../images/Rectangle\ 15.png);
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+}
+
+.article_img_cont_noseat {
+  background-image: url(../images/Rectangle\ 16.png);
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+}
+
+article h2 {
+  color: #1c5550;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+article p {
+  color: #dfd9d9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+article div:last-child {
+  background: #dfd9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 8px;
+}
+article button {
+  padding-inline: 8px 10px;
+}
+
+/* article2  */
+.article2 {
+  grid-area: article2;
+}
+/* article3  */
+.article3 {
+  grid-area: article3;
+}
+/* article4  */
+.article4 {
+  grid-area: article4;
+}
